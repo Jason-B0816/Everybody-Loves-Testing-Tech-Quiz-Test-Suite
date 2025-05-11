@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "cypress/component/Quiz.cy.jsx"],
+  "include": ["src", "../cypress/component/Quiz.cy.jsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

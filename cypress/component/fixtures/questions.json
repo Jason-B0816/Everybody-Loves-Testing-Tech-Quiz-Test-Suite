@@ -1,0 +1,13 @@
+[
+    {
+      "question": "What does HTML stand for?",
+      "options": ["Hyper Text Markup Language", "Hot Mail", "How to Make Lasagna"],
+      "correctAnswer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "What is CSS used for?",
+      "options": ["Styling web pages", "Making coffee", "Calculating numbers"],
+      "correctAnswer": "Styling web pages"
+    }
+  ]
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import Quiz from '../../src/components/Quiz'; // adjust the import path
+import Quiz from '../../client/src/components/Quiz'; // adjust the import path
 import { mount } from 'cypress/react';
 
 describe('<Quiz /> Component Test', () => {
