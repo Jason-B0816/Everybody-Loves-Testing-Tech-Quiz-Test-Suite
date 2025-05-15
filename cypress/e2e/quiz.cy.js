@@ -1,14 +1,12 @@
-import React from 'react';
-import Quiz from "../../client/src/components/Quiz"
-
-describe('<Quiz /> Component Test', () => {
+describe('Quiz E2E Test', () => {
   beforeEach(() => {
     cy.intercept("/api/questions/random", {
       statusCode: 200,
       fixture: "questions.json",
     })
   
-    cy.mount(<Quiz />);
+    // cy.mount(<Quiz />);
+    cy.visit("/")
   })
 
 
@@ -53,26 +51,4 @@ describe('<Quiz /> Component Test', () => {
 
     cy.get('h2').should('contain', 'What is the keyword to define a class in Python?');
   })
-  // const mockQuestions = [
-  //   { question: 'What is React?', options: ['Library', 'Framework'], correctAnswer: 'Library' },
-  //   { question: 'What is Node.js?', options: ['Browser', 'Runtime'], correctAnswer: 'Runtime' },
-  // ];
-
-  // it('renders the first question', () => {
-  //   mount(<Quiz questions={mockQuestions} />);
-  //   cy.contains('What is React?').should('exist');
-  // });
-
-  // it('navigates to next question after answering', () => {
-  //   mount(<Quiz questions={mockQuestions} />);
-  //   cy.contains('Library').click();
-  //   cy.contains('What is Node.js?').should('exist');
-  // });
-
-  // it('shows score at the end', () => {
-  //   mount(<Quiz questions={mockQuestions} />);
-  //   cy.contains('Library').click();
-  //   cy.contains('Runtime').click();
-  //   cy.contains(/Score/i).should('exist');
-  // });
 });

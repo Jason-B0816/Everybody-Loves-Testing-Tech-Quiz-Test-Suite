@@ -1,0 +1,21 @@
+[
+  {
+    "question": "What is the keyword to define a class in Python?",
+    "answers": [
+      { "text": "function", "isCorrect": false },
+      { "text": "def", "isCorrect": false },
+      { "text": "class", "isCorrect": true },
+      { "text": "module", "isCorrect": false }
+    ]
+  },
+  {
+    "question": "Which of the following is not a built-in data type in Python?",
+    "answers": [
+      { "text": "list", "isCorrect": false },
+      { "text": "dict", "isCorrect": false },
+      { "text": "tuple", "isCorrect": false },
+      { "text": "array", "isCorrect": true }
+    ]
+  }
+]
+  
